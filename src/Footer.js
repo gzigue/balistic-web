@@ -5,14 +5,14 @@ class Footer extends Component {
 
     render() {
         return (
-            <div>
+            <footer className="App-footer">
                 <h3>
                     Contato: 
                 </h3>
                 <p>
                     balisticfitness@gmail.com
                 </p>
-            </div>
+            </footer>
         )};
 } 
 

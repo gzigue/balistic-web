@@ -59,9 +59,19 @@ body {
 
 .introText {
   color: white;
-  text-align: left;
   margin-left: 10%;
-  margin-right: 50%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.videoLeft {
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.sideBySide {
+  display:flex;
+  flex-direction:row;
 }
 
 @keyframes App-logo-spin {

@@ -6,15 +6,15 @@ class Header extends Component {
 
     render() {
         return (
-                <div>
-                    <img src={logo} className="App-logo" alt="logo" />
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
                 <h2>
                     "Seu primo de 15 anos já tem 2 pós-doutorados!"
                 </h2>
                 <p>
                     Quer impressionar sua tia chata passando em um concurso público?
                 </p>
-            </div>
+ 	    </header>
         )};
     
     handleClick() {
