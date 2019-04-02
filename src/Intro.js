@@ -8,13 +8,16 @@ class Intro extends Component {
             <div className="sideBySide">
                 <br/>
                 <p className="introText">
-                    Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
-                    Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
-                    Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
-                    Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
 		<iframe
-		    className="videoLeft"
+		    className="videoRight"
 		    src='https://www.youtube.com/embed/5ZCgbGgA-_8'
 	            frameBorder='0'
 	            allow='autoplay; encrypted-media'
