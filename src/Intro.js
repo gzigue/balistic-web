@@ -15,7 +15,7 @@ class Intro extends Component {
                 </p>
 		<iframe
 		    className="videoLeft"
-		    src='https://www.youtube.com/embed/E7wJTI-1dvQ'
+		    src='https://www.youtube.com/embed/5ZCgbGgA-_8'
 	            frameBorder='0'
 	            allow='autoplay; encrypted-media'
 	            allowFullScreen
