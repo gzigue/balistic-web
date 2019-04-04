@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
+import YouTube from 'react-youtube';
 
 class Intro extends Component {
 
     render() {
+
+	const opts = {
+      	    height: '270',
+      	    width: '480',
+      	    playerVars: 
+		{ // https://developers.google.com/youtube/player_parameters
+            	    autoplay: 1
+        	}
+    	};
         return (
             <div className="sideBySide">
                 <br/>
@@ -13,18 +23,20 @@ class Intro extends Component {
                     Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
                     Lorem ipsum whatever Lorem ipsum whatever Lorem ipsum whatever 
                 </p>
-		<iframe
-		    className="videoLeft"
-		    src='https://www.youtube.com/embed/5ZCgbGgA-_8'
-	            frameBorder='0'
-	            allow='autoplay; encrypted-media'
-	            allowFullScreen
-	            title='video'
+		<YouTube
+		    className='videoLeft'
+		    videoId='5ZCgbGgA-_8'
+		    opts={opts}
+		    onReady={this._onReady}
 		/>
                 <br/>
                 <br/>
             </div>
         )};
+    
+    _onReady(event) {
+	event.target.pauseVideo();
+    }
     
 } 
 

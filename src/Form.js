@@ -69,7 +69,7 @@ class Form extends Component {
     }
 
     handleSubmit() {
-	alert(this.state.nome);
+	alert(JSON.stringify(this.state));
     }
 } 
 
