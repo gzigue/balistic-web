@@ -9,7 +9,8 @@ class Form extends Component {
 	    this.state = {
 	        nome: "",
 	        email: "",
-	        concursos: ""
+			concursos: "",
+			error: 'none'
 	    }
 	    this.handleChange = this.handleChange.bind(this);
 	    this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,9 +38,11 @@ class Form extends Component {
 		    		value={this.state.email} 
 		    		type="text" 
 		    		onChange={this.handleChange}
-				/>
-				<br/>
-                
+				/><br/>
+                <label style={{color: 'orange', display: this.state.error}}>
+					Este e-mail já foi cadastrado
+				</label>
+
 				<br/>
                 <label>
                     Se possível, nos conte quais concursos você pretende prestar no futuro:
@@ -88,8 +91,10 @@ class Form extends Component {
 
 		var request = new Request(API_CONFIG.address + 'usuariosinteressados', options);
 
-		fetch(request).then(function(response) {
-            console.log("Success");
+		fetch(request).then(response => {
+			if (response.status === 422) {
+				this.setState({error: 'block'})
+			}
             return response;
         }).then(function(json) {
         	console.log(json.errors);

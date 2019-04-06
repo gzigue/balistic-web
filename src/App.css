@@ -6,9 +6,33 @@
 }
 
 .App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-logo-back {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60vmin;
+  pointer-events: none;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.App-logo-middle {
+  height: 60vmin;
+  pointer-events: none;
+  align-self: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.App-logo-front {
+  height: 60vmin;
+  pointer-events: none;
+  align-self: center;
+  position: absolute;
+  z-index: 5;
 }
 
 body {
@@ -61,7 +85,7 @@ body {
   color: white;
   margin-left: 10%;
   margin-top: 10%;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-bottom: 5%;
 }
 

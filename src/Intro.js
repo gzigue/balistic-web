@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Player } from 'video-react';
+import video from "./media/prototipo.mp4";
+import "../node_modules/video-react/dist/video-react.css";
 
 class Intro extends Component {
 
@@ -21,18 +24,31 @@ class Intro extends Component {
                         deixe seu nome e e-mail logo abaixo! =)
                     </p>
                 </div>
-		        {/*<iframe
+                {/*<Player
+                    videoId="video"
+                    className="videoRight"
+                    playsInline
+                    poster=""
+                    src={video}
+                    fluid={false}
+                    style={{height: '10%'}}
+                />*/}
+		        <iframe
 		            className="videoRight"
-		            src='https://www.youtube.com/embed/5ZCgbGgA-_8'
+		            src='https://www.youtube.com/embed/sgE2SWrbfkk'
 	                    frameBorder='0'
 	                    allow='autoplay; encrypted-media'
 	                    allowFullScreen
 	                    title='video'
-                />*/}
+                />
                 <br/>
                 <br/>
             </div>
         )};
+
+        componentDidMount() {
+            //document.getElementById("video").style="height: 60%";
+        }
     
 } 
 
