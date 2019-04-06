@@ -39,7 +39,7 @@ class Footer extends Component {
         )
     };
 
-    componentDidMount() {
+    /*componentDidMount() {
         const URL = API_CONFIG.address;
         fetch(URL + "concursos")
             .then(response => response.json())
@@ -48,7 +48,7 @@ class Footer extends Component {
                     concursos: data
                 })
             );
-    }
+    }*/
 } 
 
 export default Footer;

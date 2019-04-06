@@ -21,14 +21,14 @@ class Intro extends Component {
                         deixe seu nome e e-mail logo abaixo! =)
                     </p>
                 </div>
-		        <iframe
+		        {/*<iframe
 		            className="videoRight"
 		            src='https://www.youtube.com/embed/5ZCgbGgA-_8'
 	                    frameBorder='0'
 	                    allow='autoplay; encrypted-media'
 	                    allowFullScreen
 	                    title='video'
-		        />
+                />*/}
                 <br/>
                 <br/>
             </div>

@@ -70,23 +70,38 @@ class Form extends Component {
 		type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value });
     }
 
-    handleSubmit() {
-		fetch(
-			API_CONFIG.address + 'usuariosinteressados', 
-			{
-  				method: 'POST',
-  				headers: {
-    				'Accept': 'application/json',
-    				'Content-Type': 'application/json',
-  				},
-  				body: JSON.stringify({
-					  nome: this.state.nome,
-					  email: this.state.email,
-					  concursos: this.state.concursos
-					})
-			}
-		)
-    }
-} 
+    handleSubmit(event) {
+		var options = {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+		  	},
+			mode: 'cors',
+			cache: 'default',
+			body:  JSON.stringify({
+				nome: this.state.nome,
+				email: this.state.email,
+				concursos: this.state.concursos
+			})
+		};
+
+		var request = new Request(API_CONFIG.address + 'usuariosinteressados', options);
+
+		fetch(request).then(function(response) {
+            console.log("Success");
+            return response;
+        }).then(function(json) {
+        	console.log(json.errors);
+        }).catch(function(err) {
+        	console.log("Error " + err);
+		});
+
+		event.preventDefault();
+    };
+	
+	
+	
+}
 
 export default Form;
