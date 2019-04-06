@@ -8,18 +8,15 @@ class Header extends Component {
         return (
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
+                <h1>Balistic Fitness</h1>
                 <h2>
-                    "Seu primo de 15 anos já tem 2 pós-doutorados!"
+                    O primeiro aplicativo voltado para o TAF do Brasil!
                 </h2>
-                <p>
+                {/*<p>
                     Quer impressionar sua tia chata passando em um concurso público?
-                </p>
+                </p>*/}
  	    </header>
         )};
-    
-    handleClick() {
-        alert("Yo, dawg!");
-    }
 } 
 
 export default Header;

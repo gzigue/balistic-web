@@ -6,7 +6,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /*animation: App-logo-spin infinite 20s linear;*/
   height: 40vmin;
   pointer-events: none;
 }
@@ -60,18 +60,21 @@ body {
 .introText {
   color: white;
   margin-left: 10%;
-  margin-right: 10%;
   margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
 .videoRight {
   margin-right: 10%;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .sideBySide {
   display:flex;
   flex-direction:row;
+  justify-content: space-evenly;  
 }
 
 @keyframes App-logo-spin {
